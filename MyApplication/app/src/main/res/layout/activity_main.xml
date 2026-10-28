@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minha coleção"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastre e organize seus filmes e séries"
+            android:textSize="14sp"
+            android:paddingBottom="20dp" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do filme ou série"
+            android:inputType="textCapSentences"
+            android:maxLines="1" />
+
+        <Spinner
+            android:id="@+id/spTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ano de lançamento"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <EditText
+            android:id="@+id/edtNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota pessoal (0 a 10)"
+            android:inputType="numberDecimal"
+            android:maxLength="4" />
+
+        <CheckBox
+            android:id="@+id/chkAssistido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Já assisti" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar obra" />
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpar formulário" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minha lista"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edtBusca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar por nome"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <Spinner
+            android:id="@+id/spFiltroTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/chkSomenteAssistidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar apenas assistidos" />
+
+        <TextView
+            android:id="@+id/txtQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carregando obras..."
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <ListView
+            android:id="@+id/listObras"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:dividerHeight="8dp" />
+
+    </LinearLayout>
+</ScrollView>
